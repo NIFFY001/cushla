@@ -1,2 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 @import "tailwindcss";
+
+@import url("https://fonts.googleapis.com/css2?family=Newsreader:wght@200;400;600;700&display=swap");
+
+@theme {
+  --font-newsreader: "Newsreader", serif;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap");
+
+@theme {
+  --font-jakarta: "Plus Jakarta Sans", sans-serif;
+}

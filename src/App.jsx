@@ -1,15 +1,17 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
+import Home from "./pages/Home";
+import NavBar from "./components/NavBar";
 
 function App() {
   return (
-    <Router>
+    <BrowserRouter>
       <ScrollToTop />
+      <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
       </Routes>
-    </Router>
+    </BrowserRouter>
   );
 }
 
