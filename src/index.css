@@ -12,3 +12,13 @@
 @theme {
   --font-jakarta: "Plus Jakarta Sans", sans-serif;
 }
+
+.swiper-pagination-bullet {
+  background: #6d8a55 !important;
+  opacity: 0.5;
+}
+
+.swiper-pagination-bullet-active {
+  background: #6d8a55 !important;
+  opacity: 1;
+}

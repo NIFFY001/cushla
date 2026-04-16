@@ -35,7 +35,6 @@ function NavBar() {
             <img src={logo} alt="Logo" />
           </Link>
 
-          {/* Desktop Navigation */}
           <div className="hidden md:block ml-10">
             <ul className="flex gap-8 text-[#6D8A55] font-[600]">
               {navLinks.map((link, index) => (
@@ -56,11 +55,9 @@ function NavBar() {
           </div>
         </div>
 
-        {/* Right Section */}
         <div className="flex items-center gap-4">
           <img src={image} alt="contact" className="" />
 
-          {/* Mobile Menu Button */}
           <button
             type="button"
             className="md:hidden inline-flex items-center justify-center w-10 h-10 text-[#6D8A55]"
