@@ -81,7 +81,7 @@ function Footer() {
 
           {/* Copyright */}
           <p className="font-jakarta text-[#7A8761] text-sm text-left md:text-right leading-relaxed font-jakarta uppercase tracking-[3px] text-xs text-[#B4BA9E] mb-6">
-            © 2024 Cushla Bakery. Handcrafted with Soul.
+            © 2026 Cushla Bakery. Handcrafted with Soul.
           </p>
         </div>
       </div>
