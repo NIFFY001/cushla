@@ -19,7 +19,8 @@ function NavBar() {
 
   // Navigation links
   const navLinks = [
-    { path: "/", text: "SHOP" },
+    { path: "/", text: "" },
+    { path: "/shop", text: "SHOP" },
     { path: "/about-us", text: "ABOUT" },
     { path: "/gallery", text: "GALLERY" },
   ];
@@ -69,7 +70,7 @@ function NavBar() {
         <div className="flex items-center gap-3 md:gap-4">
           <div className="flex items-center gap-2 cursor-pointer">
             <Link
-              to="/login"
+              to="/Auth"
               className="flex items-center gap-1.5 md:gap-2 text-[#6D8A55] hover:text-[#4f6740] transition px-2 py-1 rounded-full hover:bg-[#6D8A55]/10"
             >
               <User size={20} />
@@ -139,7 +140,7 @@ function NavBar() {
               {/* Mobile Login */}
               <li className="px-6 py-4">
                 <Link
-                  to="/login"
+                  to="/Auth"
                   onClick={closeMenu}
                   className="flex items-center gap-2 text-[#6D8A55] font-newsreader uppercase"
                 >
