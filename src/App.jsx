@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
 import Home from "./pages/Home";
+import About from "./pages/About";
 
 import NavBar from "./components/NavBar";
 
@@ -12,6 +13,7 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/about-us" element={<About />} />
       </Routes>
     </BrowserRouter>
   );
