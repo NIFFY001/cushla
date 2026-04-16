@@ -1,3 +1,4 @@
+// src/components/NavBar.jsx
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 
@@ -19,7 +20,7 @@ function NavBar() {
   const navLinks = [
     { path: "/", text: "SHOP" },
     { path: "/about-us", text: "ABOUT" },
-    { path: "/services", text: "GALLERY" },
+    { path: "/gallery", text: "GALLERY" },
   ];
 
   return (
@@ -31,7 +32,15 @@ function NavBar() {
         {/* Left Section */}
         <div className="flex items-center">
           {/* Logo */}
-          <Link to="/">
+          <Link
+            to="/"
+            onClick={() => {
+              window.scrollTo({
+                top: 0,
+                behavior: "smooth",
+              });
+            }}
+          >
             <img src={logo} alt="Logo" />
           </Link>
 
@@ -43,7 +52,7 @@ function NavBar() {
                     to={link.path}
                     className={({ isActive }) =>
                       isActive
-                        ? "text-[15px] font-newsreader uppercase  border-[#6D8A55] pb-1"
+                        ? "text-[15px] font-newsreader uppercase border-[#6D8A55] pb-1"
                         : "text-[15px] font-newsreader uppercase hover:text-[#4f6740] transition"
                     }
                   >
@@ -55,8 +64,9 @@ function NavBar() {
           </div>
         </div>
 
+        {/* Right Section */}
         <div className="flex items-center gap-4">
-          <img src={image} alt="contact" className="" />
+          <img src={image} alt="contact" />
 
           <button
             type="button"
@@ -101,7 +111,7 @@ function NavBar() {
           </button>
         </div>
 
-        {/* Professional Mobile Dropdown Menu */}
+        {/* Mobile Dropdown Menu */}
         {isMenuOpen && (
           <div
             id="mobile-menu"
